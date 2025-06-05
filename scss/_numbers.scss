@@ -1,0 +1,97 @@
+.numbers {
+    position: relative;
+    display: flex;
+    background-color: #FFF9F7;
+    border-radius: 41.94px;
+    margin-top: 38.6px;
+    padding: 28px;
+    z-index: 2;
+
+    .img-container  {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        max-width: 535.47px;
+        max-height: 342.53px;
+        border-radius: 27.96px;
+        overflow: hidden;
+        
+        img {
+            width: 100%;
+        }
+    }
+    .numbers-conteiner {
+        margin-top: 4px;
+        margin-left: 72.7px;
+        z-index: 3;
+        .title {
+            font-size: 41.94px;
+            margin-bottom: 38px;
+        }
+        .text {
+            font-family: 'CoreRhino';
+            font-weight: 400;
+            font-size: 18.03px;
+            z-index: 10;
+
+            .mr-h {
+                display: none;
+            }
+        }
+    }
+    .star {
+        position: absolute;
+        right: -41.87px;
+        top: 47.34px;
+        transform: rotate(-21.47deg);
+        z-index: 1;
+    }
+
+}
+
+@media (max-width:1920px) {
+    .main .wrapper .kichen .text-container .btn-con .menu {
+        font-size: clamp(32px, 3vw, 51px);
+        border-radius: clamp(18px, 3vw ,27px);
+    }
+}
+
+@media (max-width:1018px) {
+    .numbers {
+      margin-top: clamp(30px, 7vw, 38.6px);
+      align-self: center;
+      flex-direction: column;
+      max-width: fit-content;
+    }
+    .numbers .numbers-conteiner {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+    .numbers .numbers-conteiner .title {
+      margin-bottom: 18px;
+    }
+
+    .numbers .star {
+        top: auto;
+        right: 20px;
+        bottom: 15px;
+    }
+}
+
+@media (max-width:500px) {
+    .numbers .star {
+        display: none;
+    }
+}
+
+@media (max-width:440px) {
+    .numbers .numbers-conteiner .text {
+        .mr {
+            display: none;
+        }
+        .mr-h {
+            display: block;
+        }
+    }
+}

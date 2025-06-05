@@ -1,0 +1,50 @@
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 724.21px;
+  height: 100%;
+  height: fit-content;
+  margin-top: 23.46px;
+  overflow: hidden;
+  
+  .my-video {
+    width: 100%;
+    border-radius: 27.96px;
+  }
+  .play {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  .play::before {
+    content: "▶";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito-SemiBold';
+    width: 146px;
+    height: 156px;
+    font-size: 70px;
+    padding-left: 10px;
+    background: #FE2634;
+    border-radius: 50%;
+    color: #fff;
+    -webkit-font-smoothing:antialiased;
+  }
+}
+
+@media (max-width:1920px) {
+  .video {
+    .play::before {
+      width: clamp(59px, 8vw, 146px);
+      height: clamp(69px, 9vw, 156px);
+      font-size: clamp(36px, 4vw, 70px);
+    }
+  }
+}

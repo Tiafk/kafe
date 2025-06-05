@@ -1,0 +1,95 @@
+@import './top';
+@import './rok';
+@import './numbers';
+@import './videoBlock';
+@import './kichen';
+@import './memory';
+@import './video';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .wrapper {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1106px;
+        font-family: 'Nunito-Regular', sans-serif;
+        font-weight: 400;
+        padding: 50px 20px;
+
+        .main-title {
+            font-family: 'Nunito-ExtraBold';
+            font-weight: 700;
+            font-size: 52.13px;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: hsl(15, 82%, 51%);
+        }
+
+        .title {
+            font-family: 'Nunito-ExtraBold';
+            font-weight: 700;
+            font-size: 41.94px;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: #E9511D;
+        }
+
+        .red {
+            font-family: 'Nunito-ExtraBold';
+            font-weight: 700;
+            font-size: 18.03px;
+            line-height: 100%;
+            max-width:max-content;
+            color: #E9501E;
+        }
+    }
+}
+
+@media (max-width:1920px) {
+    .main .wrapper .main-title {
+        font-size: clamp(32px, 4vw, 52.13px);
+    }
+    .main .wrapper .title {
+        font-size: clamp(32px, 4vw, 41.94px);
+    }
+}
+
+@font-face {
+    font-family: 'CoreRhino';
+    src: url('../fonts/CoreRhino45Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Nunito-ExtraBold';
+    src: url('../fonts/Nunito-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url('../fonts/Nunito-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Nunito-SemiBold';
+    src: url('../fonts/Nunito-SemiBold.ttf');
+    font-style: normal;
+    font-weight: 600;
+}
