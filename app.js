@@ -51,10 +51,8 @@ const playButton = document.querySelector('.play');
 
 video.addEventListener('click', () => {
   if (video.paused) {
-    video.play();
     video.setAttribute('controls', true);
   } else {
-    video.pause();
     video.setAttribute('controls', false);
   }
 });
