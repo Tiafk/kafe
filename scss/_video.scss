@@ -1,4 +1,5 @@
 .video {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +21,14 @@
     outline: none;
     background-color: transparent;
     border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
     cursor: pointer;
   }
   .play::before {
