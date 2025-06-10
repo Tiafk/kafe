@@ -73,3 +73,5 @@ video.addEventListener('pause', () => {
 video.addEventListener('play', () => {
   playButton.style.display = 'none';
 });
+
+video.play();   
