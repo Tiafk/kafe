@@ -549,6 +549,11 @@
     font-size: clamp(36px, 4vw, 70px);
   }
 }
+@media (max-width: 1024px) {
+  .video .play, .video .play::before {
+    display: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
